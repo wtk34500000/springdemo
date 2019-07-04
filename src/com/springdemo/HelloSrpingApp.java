@@ -14,9 +14,16 @@ public class HelloSrpingApp {
 		Coach tableTennisCoach = context.getBean("tableTennisCoach", Coach.class);
 		
 		//call methods on the bean
-		System.out.println(theCoach.getDailyWorkout());
-		System.out.println(baseCoach.getDailyWorkout());
-		System.out.println(tableTennisCoach.getDailyWorkout());
+//		System.out.println(theCoach.getDailyWorkout());
+//		System.out.println(baseCoach.getDailyWorkout());
+//		System.out.println(tableTennisCoach.getDailyWorkout());
+		
+		//let call our new method for fortune
+		System.out.println(baseCoach.getDailyFortune());
+		System.out.println(theCoach.getDailyFortune());
+		System.out.println(tableTennisCoach.getDailyFortune());
+
+		
 
 		//close the context
 		context.close();
