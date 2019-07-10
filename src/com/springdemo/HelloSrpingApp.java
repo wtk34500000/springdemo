@@ -12,7 +12,7 @@ public class HelloSrpingApp {
 		Coach theCoach = context.getBean("myCoach", Coach.class);
 		Coach baseCoach = context.getBean("yourCoach", Coach.class);
 		Coach tableTennisCoach = context.getBean("tableTennisCoach", Coach.class);
-		
+		Coach criketCoach = context.getBean("myCriketCoach", Coach.class);
 		//call methods on the bean
 //		System.out.println(theCoach.getDailyWorkout());
 //		System.out.println(baseCoach.getDailyWorkout());
@@ -22,6 +22,8 @@ public class HelloSrpingApp {
 		System.out.println(baseCoach.getDailyFortune());
 		System.out.println(theCoach.getDailyFortune());
 		System.out.println(tableTennisCoach.getDailyFortune());
+		System.out.println(criketCoach.getDailyFortune());
+
 
 		
 

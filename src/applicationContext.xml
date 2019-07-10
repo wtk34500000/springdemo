@@ -25,7 +25,15 @@
     
     <bean id="tableTennisCoach" 
     	class="com.springdemo.TableTennisCoach">
+    	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortune" />
+    </bean>
+    
+     <bean id="myCriketCoach" 
+    	class="com.springdemo.CriketCoach">
+    	
+    	<!-- set up setter injection -->
+    	<property name="fortuneService" ref="myFortune" />
     </bean>
     
     <!-- define the dependency -->
