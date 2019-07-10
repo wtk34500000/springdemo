@@ -17,7 +17,7 @@ public class TableTennisCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		return "Come on, do it: "+ this.fortuneService.getFortune();
+		return "Come on, do it: "+ this.fortuneService.randomFortune();
 	}
 	
 }

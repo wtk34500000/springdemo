@@ -20,7 +20,7 @@ public class TrackCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		
-		return "Just do it: "+ fortuneSerice.getFortune();
+		return "Just do it: "+ this.fortuneSerice.randomFortune();
 	}
 
 }
