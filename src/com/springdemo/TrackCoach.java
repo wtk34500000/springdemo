@@ -22,5 +22,13 @@ public class TrackCoach implements Coach {
 		
 		return "Just do it: "+ this.fortuneSerice.randomFortune();
 	}
-
+	
+	//add an init method
+	public void doMyStartupStuff() {
+		System.out.println("TrackCoach: inside init method");
+	}
+	//add a destory method
+	public void doMyCleanupStuffyoyo() {
+		System.out.println("TrackCoach: inside destory method");
+	}
 }

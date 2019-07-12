@@ -15,15 +15,12 @@
     
     <bean id="myCoach"
     	class="com.springdemo.TrackCoach"
-    	scope="prototype">
+    	init-method="doMyStartupStuff"
+    	destroy-method="doMyCleanupStuffyoyo">
+    	
     	<constructor-arg ref="myFortune" />
     </bean>
     
-    <bean id="baseballCoach"
-    	  class="com.springdemo.BaseballCoach"
-    	  scope="prototype">
-    	  <constructor-arg ref="myFortune" />
-    </bean>
 
       
     
